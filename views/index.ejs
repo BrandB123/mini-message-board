@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <%- include('header') %>
+        <% for (message in messages) { %>
+            <div style="border: 1px solid black; border-radius: 10px; padding: 10px; margin: 10px;">
+                <p style="font-weight: 800;">From <%= messages[message].user %> </p>
+                <p><%= messages[message].text %></p>
+                <p style="font-size: 12px;"><%= messages[message].added %></p>
+            </div>
+        <% } %>
+    </body>
+</html>

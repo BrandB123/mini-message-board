@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <%- include('header') %>
+        <form method="POST" action="/new">
+            <h3>Add New Message</h3>
+            <label for="author">Name:</label>
+            <input id="author" name="author" type="text"/>
+            <label for="message">Message:</label>
+            <input id="message" name="message" type="text"/>
+            <button type="submit">Send</button>
+        </form>
+    </body>
+</html>
