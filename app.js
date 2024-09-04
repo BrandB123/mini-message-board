@@ -40,4 +40,4 @@ app.post("/new", (req, res) => {
 })
 
 
-app.listen(PORT, () => {console.log(`Express Mini Messaging Board - Listening on Port ${PORT}`)})
+app.listen(PORT, '0.0.0.0', () => {console.log(`Express Mini Messaging Board - Listening on http://0.0.0.0:${PORT}`)})
